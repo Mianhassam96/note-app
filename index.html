@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiMian Note App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Note App</h1>
+    <div class="controls">
+      <button id="addNoteBtn">+ Add Note</button>
+      <button id="exportPdfBtn">Export to PDF</button>
+      <button id="exportPngBtn">Export to PNG</button>
+      <button id="darkModeBtn">Toggle Dark Mode</button>
+      <input id="searchInput" type="text" placeholder="Search notes..." />
+    </div>
+  </header>
+  
+  <div id="app" class="app">
+    <!-- Notes will be dynamically added here -->
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 MultiMian | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
